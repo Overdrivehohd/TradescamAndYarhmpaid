@@ -49,10 +49,11 @@ Tab:AddToggle({
     })
 Tab:AddToggle({
     Name = "New autoshoot + god mode (stable)",
-    Default = true,
+    Default = false,
     Callback = function(Value)
-        print(loadstring(game:HttpGet("https://rawscripts.net/raw/Murder-Mystery-2-MM-AUTO-SHOOT-15532"))())end
-})
+        print(Value)
+    end
+loadstring(game:HttpGet("https://rawscripts.net/raw/Murder-Mystery-2-MM-AUTO-SHOOT-15532"))()})
 end
 })
 local httpHook;
